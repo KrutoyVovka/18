@@ -43,15 +43,15 @@ COLORS_1 {
 	min-height: 100%;
 	overflow: hidden;
 	/* padding: 20px; */
-	display: flex;
+	@include flexbox();
 	flex-direction: column;
 }
 [class*="__container"] {
-	max-width: 1020px;
+	max-width: 1110px;
 	margin: 0px auto;
 	padding: 0px 15px;
 	/* №1 */
-	@media (max-width: 1020px) {
+	@media (max-width: 1110px) {
 		/* max-width: 970px; */
 	}
 	/* №2 */

@@ -1,5 +1,47 @@
 //=================================================================================================
-header{}
+.header {
+	background-color:rgba(0,0,0,0.5);
+	&__container {}
+	&__row {
+		@include flexbox();
+		justify-content: space-between;
+	}
+	&__item {
+		@include flexbox();
+	}
+
+	&__logo {
+		@include flexbox();
+		column-gap: 9px;
+		align-items: center;
+
+	}
+	// .header__icon
+	&__icon {}
+	// .header__title
+	&__title {
+		@include tr(0px,4px,0px);
+	}
+	&__menu {}
+}
+
+.menu-header {
+	&__list {
+		@include flexbox();
+		column-gap: 40px;
+	}
+	&__item {}
+	&__link {
+		font-size: 14px;
+		line-height: 90px;
+		color:#fff;
+		&:active,
+		&:hover{
+			color: #34C759;
+		}
+	}
+
+}
 //=================================================================================================
 
 /*
