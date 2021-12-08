@@ -70,3 +70,15 @@ COLORS_1 {
 	flex: 1 0 100%;
 }
 
+.mainblock {
+	// .mainblock__fullscreen
+	&__fullscreen {
+		min-height: 100vh;
+	}
+	// .mainblock__picture
+	&__picture {
+		// max-width: 100%;
+	}
+	// .mainblock__container
+	&__container {}
+}
