@@ -60,6 +60,20 @@ body {
 
 /* --------------------// ОБНУЛЕНИЕ СТИЛЕЙ //----------------------- */
 /*
+ установить Quick and Simple Text Selection
+ назначить горячие клавиши на выделение текста внутри тега и внутри кавычек
+{
+	"key": "alt+e",
+	"command": "extension.selectInTag",
+	"when": "editorFocus"
+ }
+
+ {
+	"key": "alt+s",
+	"command": "extension.selectDoubleQuote",
+	"when": "editorFocus"
+ } */
+/*
 COLORS_0 {
 	color:#faed26
 			#46344e
@@ -150,6 +164,9 @@ COLORS_1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__item {
@@ -159,7 +176,7 @@ COLORS_1 {
   font-size: 0;
 }
 
-.header__logo {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +188,7 @@ COLORS_1 {
           align-items: center;
 }
 
-.header__title {
+.logo__title {
   transform: translate3d(0px, 4px, 0px);
   -webkit-transform: translate3d(0px, 4px, 0px);
   -ms-transform: translate3d(0px, 4px, 0px);
@@ -195,7 +212,7 @@ COLORS_1 {
 }
 
 .menu-header__link:active, .menu-header__link:hover {
-  color: #34C759;
+  color: #34c759;
 }
 
 /*
@@ -231,6 +248,72 @@ COLORS_1 {
           flex: 1 0 100%;
 }
 
+.mainblock {
+  position: relative;
+  padding: 170px 0px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .mainblock__fullscreen {
+  position: absolute;
+  width: 100%;
   min-height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.mainblock__picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainblock__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainblock__title {
+  font-size: 72px;
+  line-height: 1.27;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.mainblock__subtitle {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: -0.2px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.mainblock__button {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.2em;
+  color: #1a1a1a;
+}
+
+.item-main__title {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #fff;
+}
+
+.item-main__text {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.5;
 }

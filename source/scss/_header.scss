@@ -1,31 +1,35 @@
 //=================================================================================================
 .header {
-	background-color:rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	z-index: 50;
 	width: 100%;
-	&__container {}
+	&__container {
+	}
 	&__row {
 		@include flexbox();
 		justify-content: space-between;
+		align-items: center;
 	}
 	&__item {
 		@include flexbox();
 	}
-
 	&__logo {
-		@include flexbox();
-		column-gap: 9px;
-		align-items: center;
-
 	}
-	// .header__icon
-	&__icon {}
-	// .header__title
+	&__menu {
+	}
+}
+.logo {
+	@include flexbox();
+	column-gap: 9px;
+	align-items: center;
+	// .logo__icon
+	&__icon {
+	}
+	// .logo__title
 	&__title {
-		@include tr(0px,4px,0px);
+		@include tr(0px, 4px, 0px);
 	}
-	&__menu {}
 }
 
 .menu-header {
@@ -33,17 +37,17 @@
 		@include flexbox();
 		column-gap: 40px;
 	}
-	&__item {}
+	&__item {
+	}
 	&__link {
 		font-size: 14px;
 		line-height: 90px;
-		color:#fff;
+		color: #fff;
 		&:active,
-		&:hover{
-			color: #34C759;
+		&:hover {
+			color: #34c759;
 		}
 	}
-
 }
 //=================================================================================================
 

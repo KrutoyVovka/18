@@ -44,3 +44,17 @@ body {
 }
 
 /* --------------------// ОБНУЛЕНИЕ СТИЛЕЙ //----------------------- */
+/*
+ установить Quick and Simple Text Selection
+ назначить горячие клавиши на выделение текста внутри тега и внутри кавычек
+{
+	"key": "alt+e",
+	"command": "extension.selectInTag",
+	"when": "editorFocus"
+ }
+
+ {
+	"key": "alt+s",
+	"command": "extension.selectDoubleQuote",
+	"when": "editorFocus"
+ } */
