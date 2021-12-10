@@ -69,7 +69,15 @@ COLORS_1 {
 .main {
 	flex: 1 0 100%;
 }
-
+.button {
+	text-align: center;
+	color: #1a1a1a;
+	background-color: #34c759;
+	transition: all 0.2s ease 0s;
+	&:hover {
+		background-color: #34c759d4;
+	}
+}
 .mainblock {
 	position: relative;
 	padding: 170px 0px 0px 0px;
@@ -117,21 +125,18 @@ COLORS_1 {
 		color: #fff;
 		opacity: 0.7;
 		max-width: 595px;
-		&:not(:last-child){
+		&:not(:last-child) {
 			margin: 0px 0px 40px 0px;
 		}
 	}
 	// .mainblock__button
 	&__button {
-		text-align: center;
 		font-size: 18px;
 		line-height: 23px;
 		letter-spacing: 0.2em;
-		color: #1a1a1a;
-		background: #34C759;
 		border-radius: 43px;
 		padding: 25px 60px;
-		&:not(:last-child){
+		&:not(:last-child) {
 			margin: 0px 0px 60px 0px;
 		}
 	}
@@ -140,10 +145,12 @@ COLORS_1 {
 		@include flexbox();
 		flex: 0 0 33.333%;
 		align-items: flex-start;
-		justify-content: center;
+		margin: 0px -45px;
 	}
 	// .mainblock__item
 	&__item {
+		padding: 0px 45px;
+		flex: 1 1 245px;
 	}
 }
 .item-main {
@@ -151,7 +158,7 @@ COLORS_1 {
 	// flex-direction: column;
 	// .item-main__time
 	&__time {
-		&:not(:last-child){
+		&:not(:last-child) {
 			margin: 0px 0px 16px 0px;
 		}
 	}
