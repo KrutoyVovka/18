@@ -1,6 +1,6 @@
 //=================================================================================================
 .header {
-	background-color: rgba(0, 0, 0, 0.5);
+	// background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	z-index: 50;
 	width: 100%;
@@ -17,6 +17,12 @@
 	&__logo {
 	}
 	&__menu {
+	}
+	// .header__line
+	&__line {
+		background-color: #fff;
+		opacity: 0.1;
+		height: 2px;
 	}
 }
 .logo {
