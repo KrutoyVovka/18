@@ -299,7 +299,7 @@ COLORS_1 {
 .mainblock__fullscreen {
   position: absolute;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
 }
@@ -313,6 +313,9 @@ COLORS_1 {
 
 .mainblock__container {
   position: relative;
+}
+
+.mainblock__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,6 +331,10 @@ COLORS_1 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.mainblock__content:not(:last-child) {
+  margin: 0px 0px 70px 0px;
 }
 
 .mainblock__title {
@@ -369,29 +376,36 @@ COLORS_1 {
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.333%;
-          flex: 0 0 33.333%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0px -45px;
+  padding: 0px 97px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .mainblock__item {
   padding: 0px 45px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 245px;
-          flex: 1 1 245px;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  text-align: center;
+  min-width: 200px;
 }
 
-.item-main__time:not(:last-child) {
+.item-main__icon:not(:last-child) {
   margin: 0px 0px 16px 0px;
 }
 
 .item-main__title {
   font-size: 16px;
   color: #fff;
+}
+
+.item-main__title:not(:last-child) {
+  margin: 0px 0px 15px 0px;
 }
 
 .item-main__text {
