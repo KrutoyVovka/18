@@ -37,9 +37,7 @@ COLORS_1 {
 }
 
 /* --------------------// ТЕХНИЧЕСКИЕ КЛАССЫ //----------------------- */
-body {
 
-}
 .wrapper {
 	position: relative;
 	min-height: 100%;
@@ -99,7 +97,6 @@ body {
 }
 .mainblock {
 	flex: 1 0 100%;
-
 	position: relative;
 	padding: 170px 0px 400px 0px;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -116,6 +113,7 @@ body {
 		top: 0;
 		left: 0;
 		object-fit: cover;
+
 	}
 	// .mainblock__container
 	&__container {
