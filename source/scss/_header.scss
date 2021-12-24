@@ -1,6 +1,6 @@
 //=================================================================================================
 .header {
-	// background-color: rgba(0, 0, 0, 0.5);
+	background: linear-gradient(180deg, rgba(26, 26, 26, 0.0001) 0%, #1A1A1A 100%), linear-gradient(0deg, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5));
 	position: fixed;
 	z-index: 50;
 	width: 100%;
@@ -39,6 +39,9 @@
 }
 
 .menu-header {
+	@media (max-width:768px){
+		visibility: hidden;
+	}
 	&__list {
 		@include flexbox();
 		column-gap: 40px;
@@ -71,6 +74,10 @@
 			transform: rotate3d(0, 1, 0, 0deg);
 		}
 	}
+}
+.header_fixed{
+	background-color: #1A1A1A;
+
 }
 //=================================================================================================
 
