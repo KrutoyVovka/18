@@ -356,6 +356,10 @@ COLORS_1 {
   left: 0;
 }
 
+.mainblock__image::after {
+  content: '';
+}
+
 .mainblock__img {
   /* @media (max-width:600px){
 			object-position: right;
