@@ -6,10 +6,11 @@
 	<meta charset="UTF-8" />
 	<!-- <meta name="format-detection" content="telephone=no"> -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700;display=swap;subset=cyrillic-ext" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Abel:400;display=swap;subset=cyrillic-ext" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600;display=swap;subset=cyrillic-ext" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700;display=swap;subset=cyrillic-ext;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Abel:400;display=swap;subset=cyrillic-ext;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600;display=swap;subset=cyrillic-ext;display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
@@ -55,12 +56,12 @@
 		</header>
 		<main class="main">
 			<div class="mainblock">
-				<div class="mainblock__fullscreen">
-					<img src="img/mainblock/fullscreen.jpg" alt="pic" class="mainblock__picture">
+				<div class="mainblock__image _ibg">
+					<img class="mainblock__img" src="img/mainblock/fullscreen.jpg" alt="pic">
 				</div>
 				<div class="mainblock__container">
 					<div class="mainblock__content">
-						<div class="mainblock__title">Your favourite food delivered hot & fresh</div>
+						<h1 class="mainblock__title">Your favourite food delivered hot & fresh</h1>
 						<div class="mainblock__subtitle">HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh homemade dinner in just 15 minutes.</div>
 						<a href="#" class="mainblock__button button">Order Now</a>
 					</div>
@@ -87,9 +88,49 @@
 				<div class='about__container'>
 					<div class="about__body">
 						<div class="about__titles block-titles">
-							.
+							<div class="block-titles__title">ABOUT</div>
+							<div class="block-titles__subtitle">The Basics Of Healthy Food</div>
 						</div>
+						<div class="about__text">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</div>
 					</div>
+
+					<div class="about__slider slider-about">
+						<div class="slider-about__body">
+							<div class="slider-about swiper">
+								<!-- Слайдер -->
+								<div class="slider-about__wrapper swiper-wrapper">
+									<div class="slider-about__slide swiper-slide">
+										<div class="slider-about__image _ibg">
+											<img class="slider-about__img" src="img/about/about_01.jpg" alt="Картинка">
+										</div>
+									</div>
+									<div class="slider-about__slide swiper-slide">
+										<div class="slider-about__image _ibg">
+											<img class="slider-about__img" src="img/about/about_02.jpg" alt="Картинка">
+										</div>
+									</div>
+									<div class="slider-about__slide swiper-slide">
+										<div class="slider-about__image _ibg">
+											<img class="slider-about__img" src="img/about/about_01.jpg" alt="Картинка">
+										</div>
+									</div>
+									<div class="slider-about__slide swiper-slide">
+										<div class="slider-about__image _ibg">
+											<img class="slider-about__img" src="img/about/about_02.jpg" alt="Картинка">
+										</div>
+									</div>
+								</div>
+								<!-- Добавляем если нам нужны стрелки управления -->
+
+							</div>
+						</div>
+						<div class="slider-about__arrows">
+							<div class="swiper-button-prevv"></div>
+							<div class="swiper-button-nextt"></div>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
 		</main>
@@ -97,6 +138,8 @@
 			я подвал
 		</footer>
 	</div>
+	</div>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

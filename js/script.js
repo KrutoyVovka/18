@@ -70,3 +70,56 @@ window.onload = function () {
 window.onresize = function () {
 	// setTopPadding();
 };
+
+// Инициализируем Swiper
+let myImageSlider = new Swiper('.slider-about', {
+
+	// Стрелки
+	navigation: {
+		nextEl: '.swiper-button-nextt',
+		// nextEl: '',
+		prevEl: '.swiper-button-prevv'
+		// prevEl: ''
+	},
+	// Количество слайдов для показа
+	slidesPerView: 2,
+
+	// Отступ между слайдами
+	spaceBetween: 35,
+
+	// Количество пролистываемых слайдов
+	slidesPerGroup: 1,
+
+	// Стартовый слайд.
+	initialSlide: 0,
+
+	// Скорость
+	speed: 800,
+
+	// Курсор для перетаскивания
+	grabCursor: true,
+
+	// Бесконечный слайдер
+	loop: true,
+
+	// Кол-во дублирующих слайдов
+	loopedSlides: 2, // как slidesPerView:
+
+	// Брейк поинты (адаптив)
+	// Ширина экрана
+	breakpoints: {
+		320: {
+			slidesPerView: 1.1,
+			spaceBetween: 0,
+		},
+		480: {
+			slidesPerView: 1.5,
+			spaceBetween: 15,
+		},
+		769: {
+			slidesPerView: 2,
+		}
+	},
+
+}
+);
