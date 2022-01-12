@@ -71,7 +71,7 @@ COLORS_1 {
 	flex: 1 0 100%;
 	@include flexbox();
 	flex-direction: column;
-	background-color: #1a1a1a;
+	background-color:#1a1a1a;
 }
 .button {
 	font-size: 18px;
@@ -79,7 +79,7 @@ COLORS_1 {
 	border-radius: 43px;
 	padding: 25px 60px;
 	@include flexboxinline();
-	justify-content: center;
+	justify-content:center;
 	align-items: center;
 	text-align: center;
 	color: #1a1a1a;
@@ -89,12 +89,14 @@ COLORS_1 {
 	&:hover {
 		background-color: #34c759d4;
 	}
-	@media (max-width: 768px) {
+	@media (max-width:768px){
 		padding: 20px 40px;
+
 	}
-	@media (max-width: 425px) {
+	@media (max-width:425px){
 		padding: 15px 20px;
 		font-size: 16px;
+
 	}
 }
 .mainblock {
@@ -110,12 +112,14 @@ COLORS_1 {
 		height: 100%;
 		top: 0;
 		left: 0;
-		&::after {
-			content: "";
+		&::after{
+			content:'';
+
 		}
 	}
 	// .mainblock__img
 	&__img {
+
 		/* @media (max-width:600px){
 			object-position: right;
 		} */
@@ -131,7 +135,7 @@ COLORS_1 {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		&:not(:last-child) {
+		&:not(:last-child){
 			margin: 0px 0px 70px 0px;
 		}
 	}
@@ -143,10 +147,10 @@ COLORS_1 {
 		text-transform: capitalize;
 		color: #fff;
 		max-width: 800px;
-		@media (max-width: 1024px) {
+		@media (max-width:1024px){
 			font-size: 60px;
 		}
-		@media (max-width: 768px) {
+		@media (max-width:768px){
 			font-size: 40px;
 		}
 	}
@@ -164,6 +168,7 @@ COLORS_1 {
 	}
 	// .mainblock__button
 	&__button {
+
 		&:not(:last-child) {
 			margin: 0px 0px 60px 0px;
 		}
@@ -176,7 +181,7 @@ COLORS_1 {
 		padding: 0px 97px;
 		flex-wrap: wrap;
 		row-gap: 20px;
-		@media (max-width: 425px) {
+		@media (max-width:425px){
 			margin: 0;
 			padding: 0;
 		}
@@ -207,7 +212,7 @@ COLORS_1 {
 		font-size: 16px;
 		line-height: 1.3;
 		color: #fff;
-		&:not(:last-child) {
+		&:not(:last-child){
 			margin: 0px 0px 15px 0px;
 		}
 	}
@@ -218,6 +223,7 @@ COLORS_1 {
 		opacity: 0.5;
 	}
 }
+
 
 .about {
 	position: relative;
@@ -234,13 +240,14 @@ COLORS_1 {
 		// justify-content:center;align-items: center;
 		text-align: center;
 		padding: 0px 17%;
-		&:not(:last-child) {
+		&:not(:last-child){
 			margin: 0px 0px 90px 0px;
 		}
+
 	}
 	// .about__titles
 	&__titles {
-		&:not(:last-child) {
+		&:not(:last-child){
 			margin: 0px 0px 61px 0px;
 		}
 	}
@@ -248,10 +255,12 @@ COLORS_1 {
 	&__text {
 		font-size: 16px;
 		line-height: 1.87;
-		color: #a6a6a6;
+		color: #A6A6A6;
+
 	}
 	// .about__slider
 	&__slider {
+
 	}
 }
 .block-titles {
@@ -266,6 +275,7 @@ COLORS_1 {
 		line-height: 1.5;
 		letter-spacing: 0.2em;
 		color: #303030;
+
 	}
 	// .block-titles__subtitle
 	&__subtitle {
@@ -275,6 +285,7 @@ COLORS_1 {
 		line-height: 2;
 		letter-spacing: 0.2em;
 		color: #d9d9d9;
+
 	}
 }
 
@@ -284,16 +295,14 @@ COLORS_1 {
 	&__body {
 		// position: relative;
 		padding: 0px 17%;
-		@media (max-width: 480px) {
+		@media (max-width:480px){
 			padding: 0px;
 		}
 	}
 	// .slider-about__wrapper
-	&__wrapper {
-	}
+	&__wrapper {}
 	// .slider-about__slide
-	&__slide {
-	}
+	&__slide {}
 	// .slider-about__image
 	&__image {
 		text-align: center;
@@ -305,6 +314,7 @@ COLORS_1 {
 	}
 	// .slider-about__arrows
 	&__arrows {
+
 	}
 }
 
@@ -312,6 +322,7 @@ COLORS_1 {
 .swiper-button-prevv::after,
 .swiper-button-nextt::after {
 	display: none;
+
 }
 .swiper-button-prevv,
 .swiper-button-nextt {
@@ -324,14 +335,15 @@ COLORS_1 {
 	border-radius: 50%;
 	border: 2px solid #303030;
 	transition: border-color 0.2s ease 0s;
-	@media (max-width: 768px) {
-		width: 40px;
-		height: 40px;
-	}
-	@media (max-width: 1024px) {
-		width: 50px;
-		height: 50px;
-	}
+		@media (max-width:768px){
+			width: 40px;
+			height: 40px;
+		}
+		@media (max-width:1024px){
+			width: 50px;
+			height: 50px;
+		}
+
 }
 .swiper-button-prevv:hover,
 .swiper-button-nextt:hover {
@@ -339,19 +351,20 @@ COLORS_1 {
 }
 .swiper-button-prevv {
 	left: 0;
-	background: url("../../img/about/1.svg") center no-repeat;
+	background: url('../../img/about/1.svg') center no-repeat;
 	transform: translate(100%, -50%);
-	@media (max-width: 768px) {
-		transform: translate(50%, -50%);
-	}
+		@media (max-width:768px){
+			transform: translate(50%, -50%);
+		}
 }
 .swiper-button-nextt {
 	right: 0;
-	background: url("../../img/about/2.svg") center no-repeat;
+	background: url('../../img/about/2.svg') center no-repeat;
 	transform: translate(-100%, -50%);
-	@media (max-width: 768px) {
+	@media (max-width:768px){
 		transform: translate(-50%, -50%);
 	}
+
 }
 
 /* .slider-about__arrows .swiper-button-prev::after,
