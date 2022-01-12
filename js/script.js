@@ -1,4 +1,7 @@
 /*
+
+добавление класса headerу при скролле - jquerry -
+
 $(function () {
 	let header = $('.header');
 
@@ -31,22 +34,24 @@ $(function () {
 });
 */
 
+// добавление класса headerу при скролле - js -
+
 let m = document.querySelector("main"),
 	h = document.querySelector("header"),
 	hHeight;
-/*
-вычислим высоту хедера и добавим это значение в свойстве padding-top в элемент main
-*/
+
+// вычислим высоту хедера и добавим это значение в свойстве padding-top в элемент main
+
 /*
 function setTopPadding() {
 	hHeight = h.offsetHeight;
 	m.style.paddingTop = hHeight + "px";
 }
 */
-/*
-вытягиваем количество пикселей, на которое был прокручен документ;
-если число больше y px, добавляем класс к хедеру.
- */
+
+// вытягиваем количество пикселей, на которое был прокручен документ;
+// если число больше y px, добавляем класс к хедеру.
+
 function onScroll() {
 	window.addEventListener("scroll", callbackFunc);
 	function callbackFunc() {
@@ -58,11 +63,11 @@ function onScroll() {
 		}
 	}
 }
-/*
-функцию мы вызываем в двух случаях:
-после загрузки страницы;
-при изменении размера окна браузера.
- */
+
+// функцию мы вызываем в двух случаях:
+// после загрузки страницы;
+// при изменении размера окна браузера.
+
 window.onload = function () {
 	// setTopPadding();
 	onScroll();
@@ -70,6 +75,52 @@ window.onload = function () {
 window.onresize = function () {
 	// setTopPadding();
 };
+
+
+
+// Делаем бургер
+
+/* логика №1
+1) получаем объект бургер
+2) получаем объект меню
+3) вешаем обработчик события click на бургер (п. 1)
+4) добавляем класс к бургеру (п. 1)
+5) добавляем класс к меню (п. 2)
+ */
+/*
+const burger = document.querySelector('.menu-header__icon');
+const menu = document.querySelector('.menu-header__inner');
+if (burger) {
+	burger.addEventListener("click", function (e) {
+		burger.classList.toggle('_active');
+		if (menu) {
+			menu.classList.toggle('_active');
+		}
+	});
+	console.log('Есть!');
+}
+ */
+
+/* логика №2
+1) получаем объект бургер
+2) получаем объект меню (родительский)
+3) вешаем обработчик события click на бургер (п. 1)
+4) добавляем класс к объекту меню (п. 2)
+ */
+
+const menuBurger = document.querySelector('.menu-header__icon');
+const menu = menuBurger.closest('.menu-header');
+if (menuBurger) {
+	menuBurger.addEventListener('click', function (e) {
+		if (menu) {
+			menu.classList.toggle('_active')
+		}
+		console.log('Есть!');
+	});
+}
+
+
+
 
 // Инициализируем Swiper
 let myImageSlider = new Swiper('.slider-about', {
