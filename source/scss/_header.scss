@@ -10,7 +10,8 @@
 	&__row {
 		@include flexbox();
 		justify-content: space-between;
-		align-items: center;
+		// align-items: center;
+		height: 90px;
 	}
 	&__item {
 		@include flexbox();
@@ -22,6 +23,10 @@
 	}
 	// .header__line
 	&__line {
+		position: absolute;
+		top: 90px;
+		left: 0;
+		width: 100%;
 		background-color: #fff;
 		opacity: 0.1;
 		height: 2px;
@@ -47,6 +52,7 @@
 		@media (max-width:768px){
 
 			position: fixed;
+			// position: absolute;
 			top: 0;
 			left: 100%;
 			@include anim(0.3s,0s);
@@ -110,12 +116,13 @@
 			display: block;
 		}
 		position: absolute;
-		top: 18px;
+		top: 50%;
+
 		right: 0;
 		width: 30px;
 		height: 20px;
 		background-color: transparent;
-		// @include tr(0px,-50%,0px);
+		@include tr(0px,-50%,0px);
 
 
 
