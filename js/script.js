@@ -1,7 +1,7 @@
+
+// добавление класса headerу при скролле - jquerry -
+
 /*
-
-добавление класса headerу при скролле - jquerry -
-
 $(function () {
 	let header = $('.header');
 
@@ -123,6 +123,7 @@ if (menuBurger) {
 
 
 // Инициализируем Swiper
+
 let myImageSlider = new Swiper('.slider-about', {
 
 	// Стрелки
@@ -160,7 +161,7 @@ let myImageSlider = new Swiper('.slider-about', {
 	// Ширина экрана
 	breakpoints: {
 		320: {
-			slidesPerView: 1.1,
+			slidesPerView: 1.2,
 			spaceBetween: 0,
 		},
 		480: {
