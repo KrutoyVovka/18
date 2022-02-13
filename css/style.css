@@ -167,7 +167,7 @@ COLORS_1 {
   width: 100%;
   background-color: #fff;
   opacity: 0.1;
-  height: 2px;
+  height: 1px;
 }
 
 .header__row {
@@ -912,6 +912,82 @@ COLORS_1 {
   line-height: 1.38;
   letter-spacing: -0.1625px;
   color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* rating */
+.form__btn {
+  display: block;
+  background-color: #34c759;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dishes-rating {
+  position: relative;
+  font-size: 23px;
+  display: inline-block;
+}
+
+.dishes-rating::before {
+  content: '★★★★★';
+  display: block;
+}
+
+.dishes-rating__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.dishes-rating__item {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dishes-rating__item:checked,
+.dishes-rating__item:checked ~ .dishes-rating__label {
+  color: gold;
+}
+
+.dishes-rating__label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  cursor: pointer;
+  height: 100%;
+  color: #353535;
+}
+
+.dishes-rating__label:hover,
+.dishes-rating__label:hover ~ .dishes-rating__label,
+.dishes-rating__label:checked ~ .dishes-rating__label:hover {
+  color: #ffef9f;
+}
+
+.dishes-rating__label::before {
+  content: '★';
+  display: block;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
