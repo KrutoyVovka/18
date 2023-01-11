@@ -120,6 +120,31 @@ if (menuBurger) {
 }
 
 
+// для messengers
+// $(document).ready(function () {
+
+
+// 	$('body').on('click', '.sf-label', function () {
+// 		$('.fixed-social').toggleClass('active')
+// 	});
+
+// });
+const menuBurgers = document.querySelector('.sf-label');
+const menus = menuBurgers.closest('.fixed-social');
+if (menuBurgers) {
+	menuBurgers.addEventListener('click', function (e) {
+		if (menus) {
+			menus.classList.toggle('active')
+		}
+		console.log('Есть!');
+	});
+}
+
+document.querySelector(document).ready(function () {
+	document.querySelector('body').addEventListener('click', '.sf-label', function () {
+		document.querySelector('.fixed-social').classList.toggle('active')
+	});
+});
 
 
 // Инициализируем Swiper
