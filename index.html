@@ -90,7 +90,7 @@
 					</div>
 				</div>
 			</div>
-			<section class="about">
+			<div class="about">
 				<div class='about__container'>
 					<div class="about__titles block-titles">
 						<div class="block-titles__title">ABOUT</div>
@@ -136,8 +136,8 @@
 					</div>
 
 				</div>
-			</section>
-			<section class="work">
+			</div>
+			<div class="work">
 				<div class='work__container _container'>
 					<div class="work__titles block-titles">
 						<div class="block-titles__title">work</div>
@@ -169,60 +169,66 @@
 								<div class="item-work__text">Gobble makes cooking fast, so you have more time to unwind and be with family.</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="dishes">
-				<div class='dishes__container _container'>
-					<div class="dishes__titles block-titles">
-						<div class="block-titles__title">dishes</div>
-						<div class="block-titles__subtitle">dish of the day</div>
-					</div>
-					<div class="dishes_items ">
-						<div class="dishes__item">
-							<div class="item-dishes">
-								<div class="item-dishes__image">
-									<img src="img/dishes/01.jpg" alt="pic" class="item-dishes__img">
-								</div>
-								<div class="item-dishes__body">
-									<div class="item-dishes__title">Featured Meal</div>
-									<div class="item-dishes__subtitle">Served with french fries + drink</div>
-									<div class="item-dishes__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
-
-									<form action="#" class="form">
-										<div class="item-dishes__rating dishes-rating">
-											<div class="dishes-rating__items">
-												<input id="dishes-rating5" class="dishes-rating__item" name="dishes-rating" value="5" type="radio"></input>
-												<label for="dishes-rating5" class="dishes-rating__label"></label>
-												<input id="dishes-rating4" class="dishes-rating__item" name="dishes-rating" value="4" type="radio"></input>
-												<label for="dishes-rating4" class="dishes-rating__label"></label>
-												<input id="dishes-rating3" class="dishes-rating__item" name="dishes-rating" value="3" type="radio"></input>
-												<label for="dishes-rating3" class="dishes-rating__label"></label>
-												<input id="dishes-rating2" class="dishes-rating__item" name="dishes-rating" value="2" type="radio"></input>
-												<label for="dishes-rating2" class="dishes-rating__label"></label>
-												<input id="dishes-rating1" class="dishes-rating__item" name="dishes-rating" value="1" type="radio"></input>
-												<label for="dishes-rating1" class="dishes-rating__label"></label>
-											</div>
-										</div>
-										<!-- <button type="submit" class="form__btn btn">отправить</button> -->
-									</form>
-
-									<div class="item-dishes__button">ORDER</div>
-
-								</div>
-
-							</div>
-						</div>
 
 					</div>
+
 
 				</div>
-			</section>
-
+			</div>
 		</main>
 		<footer class="footer">
-			я подвал
+			<div class="fixed-social">
+				<div class="social">
+					<div class="sf-label">
+						<span>
+							<?= $curlang == 'en' ? 'Contact&nbsp;us' : 'Написать нам'; ?>Написать нам:
+						</span>
+						<ul>
+
+							<!-- <li><img src="/wp-content/themes/clear/img/sf-whatsup.svg"></li>
+							<li><img src="/wp-content/themes/clear/img/sf-telegram.svg"></li>
+							<li><img src="/wp-content/themes/clear/img/sf-viber.svg"></li>
+							<li><img src="/wp-content/themes/clear/img/sf-jivo.svg"></li> -->
+							<li><img src="/Projects/18/img/footer/socials/sf-whatsup.svg"></li>
+							<li><img src="/Projects/18/img/footer/socials/sf-telegram.svg"></li>
+							<li><img src="/Projects/18/img/footer/socials/sf-viber.svg"></li>
+							<li><img class="close" src="/Projects/18/img/footer/socials/sf-close.png"></li>
+						</ul>
+					</div>
+
+					<ul>
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=<?= get_actual_contacts('whatsapp'); ?>" target="_blank">
+								<!-- <img src="/wp-content/themes/clear/img/sf-whatsup.svg"> -->
+								<img src="/Projects/18/img/footer/socials/sf-whatsup.svg">
+								<span>WhatsUp</span>
+							</a>
+						</li>
+						<li>
+							<a href="tg://resolve?domain=<?= get_actual_contacts('telegram'); ?>" target="_blank">
+								<!-- <img src="/wp-content/themes/clear/img/sf-telegram.svg"> -->
+								<img src="/Projects/18/img/footer/socials/sf-telegram.svg">
+								<span>Telegram</span>
+							</a>
+						</li>
+						<li>
+							<a href="viber://add?number=<?= get_actual_contacts('viber'); ?>" target="_blank">
+								<!-- <img src="/wp-content/themes/clear/img/sf-viber.svg"> -->
+								<img src="/Projects/18/img/footer/socials/sf-viber.svg">
+								<span>Viber</span>
+							</a>
+							<!-- </li>
+						<? if( !get_actual_contacts('jivo_onoff') ): ?>
+						<li>
+							<a href="#" class="init-jivosite">
+								<img src="/wp-content/themes/clear/img/sf-jivo.svg">
+								<span>Онлайн&nbsp;чат</span>
+							</a>
+						</li> -->
+							<!-- <? endif; ?> -->
+					</ul>
+				</div>
+			</div>
 		</footer>
 	</div>
 	</div>
